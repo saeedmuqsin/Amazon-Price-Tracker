@@ -1,0 +1,73 @@
+:root {
+    --light-background: #FBFBFB;
+    --dark-background: #00000090;
+    --dark-font: #000000c5;
+    --yellow-font: #FFB703;
+    --light-font: #FBFBFB;
+    --font-sm: 16px;
+    --font-md: 32px;
+    --font-lg: 64px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-background);
+}
+
+.search-box {
+    max-width: 500px;
+    display: block;
+    margin: 70px auto 20px auto;
+    padding: 15px;
+}
+
+.brand-logo {
+    height: 170px;
+    width: 230px;
+    margin: 10px auto -60px auto;
+    display: block;
+}
+
+.search-box h2 {
+    color: var(--dark-font);
+    font-size: var(--font-md);
+    text-align: center;
+}
+
+.search-box p {
+    color: var(--yellow-font);
+    font-size: var(--font-sm);
+    text-align: center;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.search-box form input::placeholder{
+    font-size: var(--font-sm);
+    color: var(--dark-font);
+}
+
+.search-box form button{
+    background-color: var(--yellow-font);
+    display: block;
+    margin: 15px auto;
+    color: var(--light-font);
+}
+
+.search-box .developer {
+    margin-top: 100px;
+    font-size: 12px;
+    color: var(--dark-font);
+    font-weight: 600;
+}
+.search-box form button:hover {
+    color: var(--yellow-font);
+    border: 1px solid #0000001f;
+    box-shadow: 0px 0px 4px #00000038;
+    transition: all 0.5s;
+}
